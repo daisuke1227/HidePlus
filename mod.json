@@ -1,0 +1,11 @@
+{
+	"geode": "2.0.0-beta.20",
+	"gd": "2.204",
+	"version": "v1.0.0-beta.1",
+	"id": "coop.ultimate-hide",
+	"name": "Ultimate Hide",
+	"developers": [
+		"Coop"
+	],
+	"description": "The ultimate hide mod! Replaces other mods with one customizable mod."
+}

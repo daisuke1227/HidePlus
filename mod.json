@@ -11,5 +11,12 @@
 	"developers": [
 		"Coop"
 	],
-	"description": "The ultimate hide mod! Replaces other mods with one customizable mod."
+	"description": "The ultimate hide mod! Replaces other mods with one customizable mod.",
+	"repository": "https://github.com/coopeeo/UltimateHide/",
+	"settings": {
+		"menulayer-section": {
+			"name": "Main Menu",
+			"type": "custom"
+		}
+	}
 }

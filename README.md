@@ -1,3 +1,9 @@
-# UltimateHide
+# Ultimate Hide
 
-This is where she makes a mod.
+# Ultimate Hide
+
+The ultimate hide mod!
+Very customizable!
+
+## Credits
+* Coop: Creator

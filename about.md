@@ -1,3 +1,7 @@
-# Template Mod
+# Ultimate Hide
 
-Edit about.md to change this
+The ultimate hide mod!
+Very customizable!
+
+## Credits
+* [Coop](user:21207551): Creator

@@ -1,8 +1,12 @@
 {
 	"geode": "2.0.0-beta.20",
-	"gd": "2.204",
+	"gd": {
+		"win": "2.204",
+		"mac": "2.200",
+		"android": "2.205"
+	},
 	"version": "v1.0.0-beta.1",
-	"id": "coop.ultimate-hide",
+	"id": "coopeeo.ultimate-hide",
 	"name": "Ultimate Hide",
 	"developers": [
 		"Coop"

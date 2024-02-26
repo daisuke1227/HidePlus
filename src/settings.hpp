@@ -2,13 +2,18 @@
 #include <Geode/loader/SettingNode.hpp>
 using namespace geode::prelude;
 
+class SectionSettingValue;
+
 class SectionSettingValue : public SettingValue {
+protected:
+    std::string m_placeholder;
 public:
+    // lines 5, 8, 11, and 12 are copied from GDUtils
+    SectionSettingValue(std::string const& key, std::string const& modID, std::string const& placeholder)
+      : SettingValue(key, modID), m_placeholder(placeholder) {}
     bool load(matjson::Value const& json) override {return true;}
     bool save(matjson::Value& json) const override {return true;}
-    SettingNode* createNode(float width) override {
-        return SectionSettingNode::create(this, width);
-    }
+    SettingNode* createNode(float width) override;
 };
 
 class SectionSettingNode : public SettingNode {
@@ -17,7 +22,19 @@ protected:
         if (!SettingNode::init(value))
             return false;
         this->setContentSize({ width, 40.f });
+        // line 19 is the ONLY line i copied from GDUtils (Thanks Jouca and Firee)
+        std::string name = Mod::get()->getSettingDefinition(value->getKey())->get<CustomSetting>()->json->get<std::string>("name");
+
+        auto theMenu = CCMenu::create();
+        auto theLabel = CCLabelBMFont::create(name.c_str(),"bigFont.fnt");
+
+        // copied a bit from viper
+        theLabel->setScale(.75);
+        theLabel->setPositionX(0);
+        theMenu->addChild(theLabel);
+        theMenu->setPosition(width / 2, 18.f);
         
+        this->addChild(theMenu);
 
 
 
@@ -29,7 +46,7 @@ public:
         this->dispatchCommitted();
     }
     bool hasUncommittedChanges() override {
-        return true;
+        return false;
     }
     bool hasNonDefaultValue() override {
         return true;

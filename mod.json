@@ -6,17 +6,22 @@
 		"android": "2.205"
 	},
 	"version": "v1.0.0-beta.1",
-	"id": "coopeeo.ultimate-hide",
-	"name": "Ultimate Hide",
+	"id": "coopeeo.hide-anything",
+	"name": "Hide Anything",
 	"developers": [
 		"Coop"
 	],
-	"description": "The ultimate hide mod! Replaces other mods with one customizable mod.",
-	"repository": "https://github.com/coopeeo/UltimateHide/",
+	"description": "The ultimate hiding mod! Replaces other mods with one customizable mod.",
+	"repository": "https://github.com/coopeeo/HideAnything/",
 	"settings": {
 		"menulayer-section": {
 			"name": "Main Menu",
 			"type": "custom"
+		},
+		"menulayer-achievements": {
+			"name": "Achivements",
+			"type": "bool",
+			"default": false
 		}
 	}
 }

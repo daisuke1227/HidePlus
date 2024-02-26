@@ -19,7 +19,12 @@
 			"type": "custom"
 		},
 		"menulayer-achievements": {
-			"name": "Achivements",
+			"name": "Achievements",
+			"type": "bool",
+			"default": false
+		},
+		"menulayer-stats": {
+			"name": "Stats",
 			"type": "bool",
 			"default": false
 		}

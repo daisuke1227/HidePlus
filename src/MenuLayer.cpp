@@ -8,7 +8,7 @@ void remove(std::string ee, CCMenu* bottomMenuReplacement, CCLayer* thise, std::
 	auto mod = Mod::get();
 	if(!mod->getSettingValue<bool>(ee)) return;
 	CCNode* achievements;
-	if(menuitem2 == "") {achievements = thise->getChildByID(menuitem1)->getChildByID(menuitem2);}
+	if(menuitem2 != "") {achievements = thise->getChildByID(menuitem1)->getChildByID(menuitem2);}
 	else {achievements = thise->getChildByID(menuitem1);}
 	achievements->setVisible(false);
 	achievements->removeFromParent();

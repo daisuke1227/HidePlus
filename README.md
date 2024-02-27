@@ -1,4 +1,4 @@
-# Ultimate Hide
+# Hide+
 
 The ultimate hide mod!
 Very customizable!

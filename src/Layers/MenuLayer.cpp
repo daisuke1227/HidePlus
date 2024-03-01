@@ -46,6 +46,7 @@ class $modify(MenuLayer) {
 			hide("menulayer-title",bottomMenuReplacement,this->getChildByID("world-title"));
 			hide("menulayer-title",bottomMenuReplacement,this->getChildByID("subzero-title"));
 			hide("menulayer-title",bottomMenuReplacement,this->getChildByID("twopointtwo-title"));
+			hide("menulayer-title",bottomMenuReplacement,this->getChildByID("lite-title"));
 		}
 
 

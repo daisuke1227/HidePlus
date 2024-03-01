@@ -79,6 +79,11 @@
 			"name": "Online (Create, Saved, etc)",
 			"type": "bool",
 			"default": false
+		},
+		"menulayer-play": {
+			"name": "Play Button",
+			"type": "bool",
+			"default": false
 		}
 	}
 }

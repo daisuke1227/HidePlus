@@ -36,10 +36,17 @@ class $modify(MenuLayer) {
 		hide("menulayer-moregames",bottomMenuReplacement,this->getChildByID("more-games-menu"));
 		hide("menulayer-profile",bottomMenuReplacement,this->getChildByID("profile-menu"));
 		hide("menulayer-username",bottomMenuReplacement,this->getChildByID("player-username"));
-		hide("menulayer-daily",bottomMenuReplacement,this->getChildByID("right-side-menu")->getChildByID("daily-chest-button"));
-		hide("menulayer-garage",bottomMenuReplacement,this->getChildByID("main-menu")->getChildByID("icon-kit-button"));
-		hide("menulayer-build",bottomMenuReplacement,this->getChildByID("main-menu")->getChildByID("editor-button"));
+		remove("menulayer-daily",bottomMenuReplacement,this->getChildByID("right-side-menu")->getChildByID("daily-chest-button"));
+		remove("menulayer-garage",bottomMenuReplacement,this->getChildByID("main-menu")->getChildByID("icon-kit-button"));
+		remove("menulayer-build",bottomMenuReplacement,this->getChildByID("main-menu")->getChildByID("editor-button"));
+		remove("menulayer-play",bottomMenuReplacement,this->getChildByID("main-menu")->getChildByID("play-button"));
 		
+		if (Loader::get()->getLoadedMod("iristraa.spinoffsubtitles")) {
+			hide("menulayer-title",bottomMenuReplacement,this->getChildByID("meltdown-title"));
+			hide("menulayer-title",bottomMenuReplacement,this->getChildByID("world-title"));
+			hide("menulayer-title",bottomMenuReplacement,this->getChildByID("subzero-title"));
+			hide("menulayer-title",bottomMenuReplacement,this->getChildByID("twopointtwo-title"));
+		}
 
 
 		return true;

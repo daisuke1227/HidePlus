@@ -10,7 +10,7 @@ void remove(std::string ee, CCMenu* bottomMenuReplacement, CCNode* achievements)
 	achievements->setVisible(false);
 	achievements->removeFromParent();
 	bottomMenuReplacement->addChild(achievements);
-    if (auto parentAsLayer = static_cast<CCMenu>(parent);) parent->updateLayout();
+    if (auto parentAsLayer = static_cast<CCMenu*>(parent);) parent->updateLayout();
 }
 void hide(std::string ee, CCMenu* bottomMenuReplacement, CCNode* achievements) {
 	auto mod = Mod::get();

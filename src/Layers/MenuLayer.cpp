@@ -32,6 +32,13 @@ class $modify(MenuLayer) {
 		remove("menulayer-newgrounds",bottomMenuReplacement,this->getChildByID("bottom-menu")->getChildByID("newgrounds-button"));
 
 		hide("menulayer-social",bottomMenuReplacement,this->getChildByID("social-media-menu"));
+		hide("menulayer-title",bottomMenuReplacement,this->getChildByID("main-title"));
+		hide("menulayer-moregames",bottomMenuReplacement,this->getChildByID("more-games-menu"));
+		hide("menulayer-profile",bottomMenuReplacement,this->getChildByID("profile-menu"));
+		hide("menulayer-username",bottomMenuReplacement,this->getChildByID("player-username"));
+		hide("menulayer-daily",bottomMenuReplacement,this->getChildByID("right-side-menu")->getChildByID("daily-chest-button"));
+		hide("menulayer-garage",bottomMenuReplacement,this->getChildByID("main-menu")->getChildByID("icon-kit-button"));
+		hide("menulayer-build",bottomMenuReplacement,this->getChildByID("main-menu")->getChildByID("editor-button"));
 		
 
 

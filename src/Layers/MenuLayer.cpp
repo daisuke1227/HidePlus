@@ -31,6 +31,9 @@ class $modify(MenuLayer) {
 		remove("menulayer-stats",bottomMenuReplacement,this->getChildByID("bottom-menu")->getChildByID("stats-button"));
 		remove("menulayer-newgrounds",bottomMenuReplacement,this->getChildByID("bottom-menu")->getChildByID("newgrounds-button"));
 
+		hide("menulayer-social",bottomMenuReplacement,this->getChildByID("social-menu"));
+		
+
 
 		return true;
 	}

@@ -7,7 +7,8 @@ set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 project(HidePlus VERSION 1.0.0)
 
 file(GLOB SOURCES
-	src/*.cpp
+	src/main.cpp
+    src/Layers/*.cpp
 )
 
 add_library(${PROJECT_NAME} SHARED ${SOURCES})

@@ -1,6 +1,6 @@
 # Hide+
 
-The ultimate hide mod!
+The ultimate hiding mod!
 Very customizable!
 
 ## Layers Supported

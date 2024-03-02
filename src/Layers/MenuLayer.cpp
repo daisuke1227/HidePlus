@@ -17,14 +17,14 @@ class $modify(MenuLayer) {
 
 		auto mod = Mod::get();
 
-		if (!mod->getSettingValue<bool>("hideplus-enable")) return false;
+		if (!mod->getSettingValue<bool>("hideplus-enable")) return true;
 
 		auto bottomMenuReplacement = CCMenu::create();
 		bottomMenuReplacement->setVisible(false);
 		bottomMenuReplacement->setID("coop.bottom-menu-re");
 		this->addChild(bottomMenuReplacement);
 
-		if (Loader::get()->getLoadedMod("beat.click-sound") && !Loader::get()->getLoadedMod("geode.node-ids")) return false;
+		if (Loader::get()->getLoadedMod("beat.click-sound") && !Loader::get()->getLoadedMod("geode.node-ids")) return true;
 
 
 		remove("menulayer-achievements",bottomMenuReplacement,this->getChildByID("bottom-menu")->getChildByID("achievements-button"));

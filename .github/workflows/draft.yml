@@ -10,8 +10,6 @@ jobs:
         steps:
             - name: Checkout Repo
               uses: actions/checkout@v4
-              with:
-                path: repo
             - name: Define variables
               id: defvar
               run: |

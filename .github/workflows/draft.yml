@@ -58,9 +58,7 @@ jobs:
               with:
                 tag_name: ${{ steps.info.outputs.version }}
                 name: Hide+ ${{ steps.info.outputs.version }}
-                body: |
-                  ## Changelog
-                  - Something
+                body: ${{ steps.info.outputs.cl }}
                 draft: true
                 files: |
-                  ./artifacts/*.zip
+                  ./coopeeo.hideplus.geode

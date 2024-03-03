@@ -84,6 +84,96 @@
 			"name": "Play Button",
 			"type": "bool",
 			"default": false
+		},
+		"Creator-Layer-section": {
+			"name": "Creator Layer",
+			"type": "custom"
+		},
+		"CreatorLayer-background": {
+			"name": "Background",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-LeftCorner": {
+			"name": "Left Corner",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Featured": {
+			"name": "Featured button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Lists": {
+			"name": "Lists button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Paths": {
+			"name": "Paths button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Map-Packs": {
+			"name": "Map Packs",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Search": {
+			"name": "Search button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Map": {
+			"name": "Map button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Daily": {
+			"name": "Daily button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Weekly": {
+			"name": "Weekly button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Event": {
+			"name": "Event button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Gauntles": {
+			"name": "Gauntles button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Create": {
+			"name": "Create button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Saved": {
+			"name": "Saved button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Scores": {
+			"name": "Scores button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Quests": {
+			"name": "Quests button",
+			"type": "bool",
+			"default": false
+		},
+		"CreatorLayer-Versus": {
+			"name": "Versus button",
+			"type": "bool",
+			"default": false
 		}
+
 	}
 }

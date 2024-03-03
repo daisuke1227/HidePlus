@@ -27,7 +27,7 @@ void hidebtns(auto replace,auto btnslayer) {
 
 class $modify(CreatorLayer) {
 	static void onModify(auto& self) {
-        self.setHookPriority("MenuLayer::init", -26902);
+        self.setHookPriority("CreatorLayer::init", -26902);
     }
 	
 	bool init() {
@@ -41,15 +41,27 @@ class $modify(CreatorLayer) {
 	
 		auto bottomMenuReplacement = CCMenu::create();
 		bottomMenuReplacement->setVisible(false);
-		bottomMenuReplacement->setID("bottom-menu-re"_spr);
+		bottomMenuReplacement->setID("replacer"_spr);
 		this->addChild(bottomMenuReplacement);
 
 		hide("creatorlayer-background",bottomMenuReplacement,this->getChildByID("background"));
 		remove("creatorlayer-leftcorner",bottomMenuReplacement,this->getChildByID("bottom-left-corner"));
+		remove("creatorlayer-leftcorner",bottomMenuReplacement,this->getChildByID("top-left-corner"));
 		if(auto creatorbtns = this->getChildByID("creator-buttons-menu")) {
 			hidebtns(bottomMenuReplacement,creatorbtns);
 		};
-
+		if(auto topr = this->getChildByID("top-right-menu")) {
+			remove("creatorlayer-Vault",bottomMenuReplacement,topr->getChildByID("vault-button"));
+		}
+		else {
+			remove("creatorlayer-Vault",bottomMenuReplacement,this->getChildByIDRecursive("vault-button"));
+		}
+		if(auto botmr = this->getChildByID("bottom-right-menu")) {
+			remove("creatorlayer-Treasure-Room",bottomMenuReplacement,botmr->getChildByID("treasure-room-button"));
+		}
+		else {
+			remove("creatorlayer-Treasure-Room",bottomMenuReplacement,this->getChildByIDRecursive("treasure-room-button"));
+		}
 		return true;
 	}
 };

@@ -10,6 +10,8 @@ jobs:
         steps:
             - name: Checkout Repo
               uses: actions/checkout@v4
+              with:
+                path: repo
             - name: Define variables
               id: defvar
               run: |
@@ -48,7 +50,7 @@ jobs:
                 7z x "./artifacts/Build Output.zip" -o"./"
             - name: Get Info
               id: info
-              run: python3 .github/getinfo.py
+              run: python3 repo/.github/getInfo.py
             - name: Create Draft Release
               uses: softprops/action-gh-release@v1
               env:

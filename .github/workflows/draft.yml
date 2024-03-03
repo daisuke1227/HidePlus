@@ -47,7 +47,7 @@ jobs:
                     }
             - name: Unzip Build
               run: |
-                7z "./artifacts/Build Output.zip" -o"./"
+                7z x "./artifacts/Build Output.zip" -o"./"
             - name: Get Info
               id: info
               run: python3 ./repo/.github/getinfo.py

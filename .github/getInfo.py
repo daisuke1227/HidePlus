@@ -17,5 +17,6 @@ for eeeee in eee:
 	eeee.append(eeeee.decode('utf-8'))
 	eeeeee = "".join(eeee)
 
-open(os.getenv('GITHUB_OUTPUT'), 'a') as file:
+if os.getenv('GITHUB_OUTPUT'):
+		with open(os.getenv('GITHUB_OUTPUT'), 'a') as file:
 			file.write('cl=' + ("# " + eeeeee.split("##")[1]).replace((eeeeee.split("##")[1]).split("\r")[0], "What's New This Update") + '\nversion=' + json.reads(archive.read('mod.json'))["version"] + '\n')

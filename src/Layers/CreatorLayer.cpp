@@ -12,12 +12,12 @@ void hidebtns(auto replace,auto btnslayer) {
 	remove("creatorlayer-lists",replace,btnslayer->getChildByID("lists-button"));
 	remove("creatorlayer-paths",replace,btnslayer->getChildByID("paths-button"));
 	remove("creatorlayer-mappacks",replace,btnslayer->getChildByID("map-packs-button"));
-	remove("creatorlayer-Search",replace,btnslayer->getChildByID("search-button"));
-	remove("creatorlayer-Map",replace,btnslayer->getChildByID("map-button"));
+	remove("creatorlayer-search",replace,btnslayer->getChildByID("search-button"));
+	remove("creatorlayer-map",replace,btnslayer->getChildByID("map-button"));
 	remove("creatorlayer-daily",replace,btnslayer->getChildByID("daily-button"));
 	remove("creatorlayer-weekly",replace,btnslayer->getChildByID("weekly-button"));
 	remove("creatorlayer-event",replace,btnslayer->getChildByID("event-button"));
-	remove("creatorlayer-gauntles",replace,btnslayer->getChildByID("gauntles-button"));
+	remove("creatorlayer-gauntlets",replace,btnslayer->getChildByID("gauntlets-button"));
 	remove("creatorlayer-create",replace,btnslayer->getChildByID("create-button"));
 	remove("creatorlayer-saved",replace,btnslayer->getChildByID("saved-button"));
 	remove("creatorlayer-scores",replace,btnslayer->getChildByID("scores-button"));

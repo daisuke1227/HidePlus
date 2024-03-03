@@ -14,9 +14,7 @@ archive = zipfile.ZipFile('coopeeo.hideplus.geode', 'r')
 eee = archive.open('changelog.md')
 eeee = []
 for eeeee in eee:
-		# print(eeeee.decode('utf-8'))
-		eeee.append(eeeee.decode('utf-8'))
-	# print(eeee)
+	eeee.append(eeeee.decode('utf-8'))
 	eeeeee = "".join(eeee)
 
 open(os.getenv('GITHUB_OUTPUT'), 'a') as file:

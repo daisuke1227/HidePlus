@@ -8,21 +8,21 @@ using namespace geode::prelude;
 
 
 void hidebtns(auto replace,auto btnslayer) {
-	remove("CreatorLayer-Featured",replace,btnslayer->getChildByID("featured-button"));
-	remove("CreatorLayer-Lists",replace,btnslayer->getChildByID("lists-button"));
-	remove("CreatorLayer-Paths",replace,btnslayer->getChildByID("paths-button"));
-	remove("CreatorLayer-Map-Packs",replace,btnslayer->getChildByID("map-packs-button"));
-	remove("CreatorLayer-Search",replace,btnslayer->getChildByID("search-button"));
-	remove("CreatorLayer-Map",replace,btnslayer->getChildByID("map-button"));
-	remove("CreatorLayer-Daily",replace,btnslayer->getChildByID("daily-button"));
-	remove("CreatorLayer-Weekly",replace,btnslayer->getChildByID("weekly-button"));
-	remove("CreatorLayer-Event",replace,btnslayer->getChildByID("event-button"));
-	remove("CreatorLayer-Gauntles",replace,btnslayer->getChildByID("gauntles-button"));
-	remove("CreatorLayer-Create",replace,btnslayer->getChildByID("create-button"));
-	remove("CreatorLayer-Saved",replace,btnslayer->getChildByID("saved-button"));
-	remove("CreatorLayer-Scores",replace,btnslayer->getChildByID("scores-button"));
-	remove("CreatorLayer-Quests",replace,btnslayer->getChildByID("quests-button"));
-	remove("CreatorLayer-Versus",replace,btnslayer->getChildByID("versus-button"));
+	remove("creatorlayer-featured",replace,btnslayer->getChildByID("featured-button"));
+	remove("creatorlayer-lists",replace,btnslayer->getChildByID("lists-button"));
+	remove("creatorlayer-paths",replace,btnslayer->getChildByID("paths-button"));
+	remove("creatorlayer-mappacks",replace,btnslayer->getChildByID("map-packs-button"));
+	remove("creatorlayer-Search",replace,btnslayer->getChildByID("search-button"));
+	remove("creatorlayer-Map",replace,btnslayer->getChildByID("map-button"));
+	remove("creatorlayer-daily",replace,btnslayer->getChildByID("daily-button"));
+	remove("creatorlayer-weekly",replace,btnslayer->getChildByID("weekly-button"));
+	remove("creatorlayer-event",replace,btnslayer->getChildByID("event-button"));
+	remove("creatorlayer-gauntles",replace,btnslayer->getChildByID("gauntles-button"));
+	remove("creatorlayer-create",replace,btnslayer->getChildByID("create-button"));
+	remove("creatorlayer-saved",replace,btnslayer->getChildByID("saved-button"));
+	remove("creatorlayer-scores",replace,btnslayer->getChildByID("scores-button"));
+	remove("creatorlayer-quests",replace,btnslayer->getChildByID("quests-button"));
+	remove("creatorlayer-versus",replace,btnslayer->getChildByID("versus-button"));
 };
 
 class $modify(CreatorLayer) {
@@ -44,8 +44,8 @@ class $modify(CreatorLayer) {
 		bottomMenuReplacement->setID("bottom-menu-re"_spr);
 		this->addChild(bottomMenuReplacement);
 
-		hide("CreatorLayer-background",bottomMenuReplacement,this->getChildByID("background"));
-		remove("CreatorLayer-LeftCorner",bottomMenuReplacement,this->getChildByID("bottom-left-corner"));
+		hide("creatorlayer-background",bottomMenuReplacement,this->getChildByID("background"));
+		remove("creatorlayer-leftcorner",bottomMenuReplacement,this->getChildByID("bottom-left-corner"));
 		if(auto creatorbtns = this->getChildByID("creator-buttons-menu")) {
 			hidebtns(bottomMenuReplacement,creatorbtns);
 		};

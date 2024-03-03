@@ -76,7 +76,7 @@
 			"default": false
 		},
 		"menulayer-build": {
-			"name": "Online (Create, Saved, etc)",
+			"name": "Creator Button (Create, Saved, etc)",
 			"type": "bool",
 			"default": false
 		},
@@ -85,91 +85,91 @@
 			"type": "bool",
 			"default": false
 		},
-		"Creator-Layer-section": {
+		"creatorlayer-section": {
 			"name": "Creator Layer",
 			"type": "custom"
 		},
-		"CreatorLayer-background": {
+		"creatorlayer-background": {
 			"name": "Background",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-LeftCorner": {
+		"creatorlayer-leftcorner": {
 			"name": "Left Corner",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Featured": {
+		"creatorlayer-featured": {
 			"name": "Featured button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Lists": {
+		"creatorlayer-lists": {
 			"name": "Lists button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Paths": {
+		"creatorlayer-paths": {
 			"name": "Paths button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Map-Packs": {
+		"creatorlayer-mappacks": {
 			"name": "Map Packs",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Search": {
+		"creatorlayer-search": {
 			"name": "Search button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Map": {
+		"creatorlayer-map": {
 			"name": "Map button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Daily": {
+		"creatorlayer-daily": {
 			"name": "Daily button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Weekly": {
+		"creatorlayer-weekly": {
 			"name": "Weekly button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Event": {
+		"creatorlayer-event": {
 			"name": "Event button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Gauntles": {
+		"creatorlayer-gauntles": {
 			"name": "Gauntles button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Create": {
+		"creatorlayer-create": {
 			"name": "Create button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Saved": {
+		"creatorlayer-saved": {
 			"name": "Saved button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Scores": {
+		"creatorlayer-scores": {
 			"name": "Scores button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Quests": {
+		"creatorlayer-quests": {
 			"name": "Quests button",
 			"type": "bool",
 			"default": false
 		},
-		"CreatorLayer-Versus": {
+		"creatorlayer-versus": {
 			"name": "Versus button",
 			"type": "bool",
 			"default": false

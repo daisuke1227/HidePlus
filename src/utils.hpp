@@ -2,7 +2,7 @@
 #include <Geode/Geode.hpp>
 using namespace geode::prelude;
 
-void remove(std::string ee, CCMenu* bottomMenuReplacement, CCNode* achievements) {
+static void remove(std::string ee, CCMenu* bottomMenuReplacement, CCNode* achievements) {
 	auto mod = Mod::get();
 	if(!mod->getSettingValue<bool>(ee)) return;
     if(!achievements) return;
@@ -12,7 +12,7 @@ void remove(std::string ee, CCMenu* bottomMenuReplacement, CCNode* achievements)
 	bottomMenuReplacement->addChild(achievements);
     if (auto parentAsLayer = static_cast<CCMenu*>(parent)) parent->updateLayout();
 }
-void hide(std::string ee, CCMenu* bottomMenuReplacement, CCNode* achievements) {
+static void hide(std::string ee, CCMenu* bottomMenuReplacement, CCNode* achievements) {
 	auto mod = Mod::get();
 	if(!mod->getSettingValue<bool>(ee)) return;
     if(!achievements) return;

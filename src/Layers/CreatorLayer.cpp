@@ -31,7 +31,7 @@ class $modify(CreatorLayer) {
     }
 	
 	bool init() {
-		if (!MenuLayer::init()) {
+		if (!CreatorLayer::init()) {
 			return false;
 		}
 

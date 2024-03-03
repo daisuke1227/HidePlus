@@ -5,10 +5,13 @@
 		"mac": "2.200",
 		"android": "2.205"
 	},
-	"version": "v1.1.0",
+	"version": "v1.2.0",
 	"id": "coopeeo.hideplus",
 	"name": "Hide+",
-	"developer": "Cooper",
+	"developers": [
+		"Cooper",
+		"Viper"
+	],
 	"description": "The ultimate hiding mod! Replaces other mods with one customizable mod.",
 	"repository": "https://github.com/coopeeo/HideAnything/",
 	"settings": {

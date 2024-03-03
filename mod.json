@@ -76,7 +76,7 @@
 			"default": false
 		},
 		"menulayer-build": {
-			"name": "Online (Create, Saved, etc)",
+			"name": "Creator Button (Create, Saved, etc)",
 			"type": "bool",
 			"default": false
 		},
@@ -84,6 +84,96 @@
 			"name": "Play Button",
 			"type": "bool",
 			"default": false
+		},
+		"creatorlayer-section": {
+			"name": "Creator Layer",
+			"type": "custom"
+		},
+		"creatorlayer-background": {
+			"name": "Background",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-leftcorner": {
+			"name": "Left Corner",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-featured": {
+			"name": "Featured button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-lists": {
+			"name": "Lists button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-paths": {
+			"name": "Paths button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-mappacks": {
+			"name": "Map Packs",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-search": {
+			"name": "Search button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-map": {
+			"name": "Map button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-daily": {
+			"name": "Daily button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-weekly": {
+			"name": "Weekly button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-event": {
+			"name": "Event button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-gauntles": {
+			"name": "Gauntles button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-create": {
+			"name": "Create button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-saved": {
+			"name": "Saved button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-scores": {
+			"name": "Scores button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-quests": {
+			"name": "Quests button",
+			"type": "bool",
+			"default": false
+		},
+		"creatorlayer-versus": {
+			"name": "Versus button",
+			"type": "bool",
+			"default": false
 		}
+
 	}
 }

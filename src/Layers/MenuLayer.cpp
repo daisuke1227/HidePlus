@@ -21,7 +21,7 @@ class $modify(MenuLayer) {
 
 		auto bottomMenuReplacement = CCMenu::create();
 		bottomMenuReplacement->setVisible(false);
-		bottomMenuReplacement->setID("coop.bottom-menu-re");
+		bottomMenuReplacement->setID("bottom-menu-re"_spr);
 		this->addChild(bottomMenuReplacement);
 
 		if (Loader::get()->getLoadedMod("beat.click-sound") && !Loader::get()->getLoadedMod("geode.node-ids")) return true;

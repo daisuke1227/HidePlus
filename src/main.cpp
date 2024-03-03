@@ -9,5 +9,6 @@ SettingNode* SectionSettingValue::createNode(float width) {return SectionSetting
 $on_mod(Loaded) {
 	Mod::get()->addCustomSetting<SectionSettingValue>("hideplus-section", "none");
 	Mod::get()->addCustomSetting<SectionSettingValue>("menulayer-section", "none");
+	Mod::get()->addCustomSetting<SectionSettingValue>("creatorlayer-section", "none");
 };
 

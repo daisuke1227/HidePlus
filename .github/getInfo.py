@@ -19,4 +19,4 @@ for eeeee in eee:
 
 if os.getenv('GITHUB_OUTPUT'):
 		with open(os.getenv('GITHUB_OUTPUT'), 'a') as file:
-			file.write('cl=' + ("# " + eeeeee.split("##")[1]).replace((eeeeee.split("##")[1]).split("\r")[0], "What's New This Update") + '\nversion=' + json.reads(archive.read('mod.json'))["version"] + '\n')
+			file.write('cl=' + ("# " + eeeeee.split("##")[1]).replace((eeeeee.split("##")[1]).split("\r")[0], "What's New This Update") + '\nversion=' + json.loads(archive.read('mod.json'))["version"] + '\n')

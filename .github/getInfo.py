@@ -15,9 +15,10 @@ eee = archive.open('changelog.md')
 eeee = []
 for eeeee in eee:
 	eeee.append(eeeee.decode('utf-8'))
-	eeeeee = "".join(eeee)
 
-one = ('# ' + eeee.split("##")[1]).replace((eeee.split('##')[1]).split('\r')[0], 'What\'s New This Update')
+eeeeee = "".join(eeee)
+
+one = ('# ' + eeeee.split("##")[1]).replace((eeeee.split('##')[1]).split('\r')[0], 'What\'s New This Update')
 two = json.loads(archive.read('mod.json'))["version"]
 
 if os.getenv('GITHUB_OUTPUT'):

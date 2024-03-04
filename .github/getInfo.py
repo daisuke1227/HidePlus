@@ -23,7 +23,7 @@ two = json.loads(archive.read('mod.json'))["version"]
 
 if os.getenv('GITHUB_OUTPUT'):
 	with open(os.getenv('GITHUB_OUTPUT'), 'a') as file:
-		file.write(f'cl={one}\n')
+		file.write(f'\'cl={one}\'\n')
 if os.getenv('GITHUB_OUTPUT'):
 	with open(os.getenv('GITHUB_OUTPUT'), 'a') as file:
-		file.write(f'version={two}\n')
+		file.write(f'version=\'{two}\'\n')

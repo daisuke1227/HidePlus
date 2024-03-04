@@ -11,7 +11,7 @@ import subprocess
 
 
 archive = zipfile.ZipFile('coopeeo.hideplus.geode', 'r')
-eee = archive.read('changelog.md')
+eee = archive.open('changelog.md')
 eeee = []
 for eeeee in eee:
 	eeee.append(eeeee.decode('utf-8'))

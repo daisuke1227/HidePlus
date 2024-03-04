@@ -18,7 +18,7 @@ for eeeee in eee:
 
 eeeeee = ''.join(eeee).encode('utf-8')
 
-one = ('# ' + eeeee.split('##')[1]).replace((eeeee.split('##')[1]).split('\r')[0], 'What\'s New This Update')
+one = ('# ' + eeeee.split('##')[1]).replace((eeeee.split('##')[1]).split('\r')[0], 'What\'s New This Update').encode('utf-8')
 two = json.loads(archive.read('mod.json'))["version"]
 
 if os.getenv('GITHUB_OUTPUT'):

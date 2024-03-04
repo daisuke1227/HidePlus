@@ -12,7 +12,12 @@ import subprocess
 
 archive = zipfile.ZipFile('coopeeo.hideplus.geode', 'r')
 eee = archive.read('changelog.md')
-one = ('# ' + eee.split("##")[1]).replace((eee.split('##')[1]).split('\r')[0], 'What\'s New This Update')
+eeee = []
+for eeeee in eee:
+	eeee.append(eeeee.decode('utf-8'))
+	eeeeee = "".join(eeee)
+
+one = ('# ' + eeee.split("##")[1]).replace((eeee.split('##')[1]).split('\r')[0], 'What\'s New This Update')
 two = json.loads(archive.read('mod.json'))["version"]
 
 if os.getenv('GITHUB_OUTPUT'):

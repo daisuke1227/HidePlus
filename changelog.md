@@ -1,6 +1,9 @@
 # Hide+
+## v1.2.2
+* Added support for GD 2.206
+* Removed platform support for iOS
 ## v1.2.1
-* Add platform support for ???
+* Add platform support for iOS
 ## v1.2.0
 * Added LevelBrowserLayer (#2 by Viper)
 ## v1.1.0

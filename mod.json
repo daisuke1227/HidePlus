@@ -12,6 +12,11 @@
 		"Cooper",
 		"Viper"
 	],
+	"links": {
+		"community": "https://discord.com/invite/dDU5furFHk",
+		"homepage": "https://coopeeo.xyz",
+		"source": "https://github.com/coopeeo/HidePlus/"
+	},
 	"description": "The ultimate hiding mod! Replaces other mods with one customizable mod.",
 	"repository": "https://github.com/coopeeo/HidePlus/",
 	"settings": {

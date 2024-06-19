@@ -1,4 +1,6 @@
 # Hide+
+## v1.2.3
+* Added tags
 ## v1.2.2
 * Added support for GD 2.206
 * Removed platform support for iOS

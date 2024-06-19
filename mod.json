@@ -5,7 +5,7 @@
 		"mac": "2.206",
 		"android": "2.206"
 	},
-	"version": "v1.2.2",
+	"version": "v1.2.3",
 	"id": "coopeeo.hideplus",
 	"name": "Hide+",
 	"developers": [
@@ -17,6 +17,14 @@
 		"homepage": "https://coopeeo.xyz",
 		"source": "https://github.com/coopeeo/HidePlus/"
 	},
+	"tags": [
+		"Customization",
+		"Universal",
+		"Interface",
+		"Offline",
+		"Utility",
+		"Enhancement"
+	],
 	"description": "The ultimate hiding mod! Replaces other mods with one customizable mod.",
 	"repository": "https://github.com/coopeeo/HidePlus/",
 	"settings": {

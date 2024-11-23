@@ -1,7 +1,6 @@
 #include <Geode/Geode.hpp>
 #include <Geode/modify/LevelSearchLayer.hpp>
 #include <Geode/binding/LevelSearchLayer.hpp>
-#include "../settings.hpp"
 #include "../utils.hpp"
 
 

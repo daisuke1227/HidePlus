@@ -1,7 +1,6 @@
 #include <Geode/Geode.hpp>
 #include <Geode/modify/CreatorLayer.hpp>
 #include <Geode/binding/CreatorLayer.hpp>
-#include "../settings.hpp"
 #include "../utils.hpp"
 
 using namespace geode::prelude;

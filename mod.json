@@ -1,36 +1,32 @@
 {
-	"geode": "3.0.0-beta.1",
+	"geode": "4.0.1",
 	"gd": {
-		"win": "2.206",
-		"mac": "2.206",
-		"android": "2.206"
+		"win": "2.2074",
+		"mac": "2.2074",
+		"android": "2.2074"
 	},
-	"version": "v1.2.3",
+	"version": "v1.3.0",
 	"id": "coopeeo.hideplus",
 	"name": "Hide+",
-	"developers": [
-		"Cooper",
-		"Viper"
-	],
+	"developer": "Cooper",
 	"links": {
 		"community": "https://discord.com/invite/dDU5furFHk",
 		"homepage": "https://coopeeo.xyz",
 		"source": "https://github.com/coopeeo/HidePlus/"
 	},
 	"tags": [
-		"Customization",
-		"Universal",
-		"Interface",
-		"Offline",
-		"Utility",
-		"Enhancement"
+		"customization",
+		"universal",
+		"interface",
+		"offline",
+		"utility",
+		"enhancement"
 	],
-	"description": "The ultimate hiding mod! Replaces other mods with one customizable mod.",
-	"repository": "https://github.com/coopeeo/HidePlus/",
+	"description": "The ultimate hiding mod! Replace other mods with one customizable mod.",
 	"settings": {
 		"hideplus-section": {
 			"name": "Hide+",
-			"type": "custom"
+			"type": "title"
 		},
 		"hideplus-enable": {
 			"name": "Enable Mod",
@@ -39,7 +35,7 @@
 		},
 		"menulayer-section": {
 			"name": "Main Menu",
-			"type": "custom"
+			"type": "title"
 		},
 		"menulayer-achievements": {
 			"name": "Achievements",
@@ -103,7 +99,7 @@
 		},
 		"creatorlayer-section": {
 			"name": "Creator Layer",
-			"type": "custom"
+			"type": "title"
 		},
 		"creatorlayer-background": {
 			"name": "Background",
@@ -202,9 +198,8 @@
 		},
 		"LevelSearchLayer-section": {
 			"name": "Level Search Menu",
-			"type": "custom"
+			"type": "title"
 		},
-		
 		"LevelSearchLayer-background": {
 			"name": "Menu Background",
 			"type": "bool",

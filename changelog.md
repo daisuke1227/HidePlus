@@ -1,4 +1,8 @@
 # Hide+
+## v1.3.0
+* Removed Custom Settings (The Titles) (Built-In to Geode v3 Settings)
+* Updated to Geode v4
+* Updated to GD 2.207
 ## v1.2.3
 * Added tags
 ## v1.2.2

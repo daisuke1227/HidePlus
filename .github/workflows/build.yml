@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - "main"
+      - "**"
 
 jobs:
   build:
@@ -12,47 +12,33 @@ jobs:
       fail-fast: false
       matrix:
         config:
-        - name: Windows
-          os: windows-latest
           
-        - name: macOS
+        - name: iOS
           os: macos-latest
-
-        #- name: iOS
-        #  os: macos-latest
-        #  target: iOS
-
-        - name: Android 32-bit
-          os: ubuntu-latest
-          target: Android32
-
-        - name: Android 64-bit
-          os: ubuntu-latest
-          target: Android64
+          target: iOS
 
     name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
-    if: ${{ !endsWith(github.event.head_commit.message, '--nobuild') }}
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Build the mod
-        #uses: RoootTheFox/build-geode-mod@main
         uses: geode-sdk/build-geode-mod@main
         with:
+          bindings: geode-sdk/bindings
+          bindings-ref: main
           combine: true
-          sdk: nightly
+          sdk: 'nightly'
+          cli: 'nightly'
           target: ${{ matrix.config.target }}
-      
+
   package:
     name: Package builds
     runs-on: ubuntu-latest
     needs: ['build']
-    if: ${{ !endsWith(github.event.head_commit.message, '--nobuild') }}
 
     steps:
-      #- uses: RoootTheFox/build-geode-mod/combine@main
       - uses: geode-sdk/build-geode-mod/combine@main
         id: build
 

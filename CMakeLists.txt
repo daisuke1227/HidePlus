@@ -1,5 +1,5 @@
-make_minimum_required(VERSION 3.21)
-set(CMAKE_CXX_STANDARD 23)
+cmake_minimum_required(VERSION 3.21)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if ("${CMAKE_SYSTEM_NAME}" STREQUAL "iOS" OR IOS)
@@ -7,13 +7,12 @@ if ("${CMAKE_SYSTEM_NAME}" STREQUAL "iOS" OR IOS)
 else()
     set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
 endif()
-
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
 project(HidePlus VERSION 1.0.0)
 
 file(GLOB SOURCES
-	src/main.cpp
+    src/main.cpp
     src/Layers/*.cpp
 )
 
